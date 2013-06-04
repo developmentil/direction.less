@@ -5,7 +5,8 @@ Less.js RTL/LTR mixins rules.
 
 # Download
 
-[latest](https://raw.github.com/DevelopmentIL/direction.less/master/direction.less) - Version 0.1.0
+[v0.1.0](https://raw.github.com/DevelopmentIL/direction.less/v0.1.0/direction.less)
+[master](https://raw.github.com/DevelopmentIL/direction.less/master/direction.less)
 
 # Example
 
