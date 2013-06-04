@@ -17,6 +17,10 @@ Less.js RTL/LTR mixins rules.
     body {
       .direction();
     }
+    
+    .float {
+      .float();
+    }
 
     .box {
       display: inline-block;
@@ -26,14 +30,36 @@ Less.js RTL/LTR mixins rules.
 
 ## Output
 
+### RTL
+
     body {
       direction: rtl;
+    }
+
+    .float {
+      float: right;
     }
 
     .box {
       display: inline-block;
       margin-right: 4px;
       padding-left: 1em;
+    }
+
+### LTR
+
+    body {
+      direction: ltr;
+    }
+
+    .float {
+      float: left;
+    }
+
+    .box {
+      display: inline-block;
+      margin-left: 4px;
+      padding-right: 1em;
     }
 
 
