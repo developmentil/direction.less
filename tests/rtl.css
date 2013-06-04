@@ -66,6 +66,18 @@ div.direction-ltr {
 div.left {
   right: 10px;
 }
+div.float {
+  float: right;
+}
+div.float-none {
+  float: none;
+}
+div.float-left {
+  float: right;
+}
+div.float-right {
+  float: left;
+}
 div.margin {
   margin: 1px 4px 3px 2px;
 }

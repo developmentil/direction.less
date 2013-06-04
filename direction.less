@@ -187,6 +187,25 @@
 }
 
 
+// "float:" rule
+
+.float() {
+	float: @left;
+}
+
+.float(@float) when not (@rtl), not (@float = left) and not (@float = right) {
+	float: @float;
+}
+
+.float(left) when (@rtl) {
+	float: right;
+}
+
+.float(right) when (@rtl) {
+	float: left;
+}
+
+
 // "margin:" rule
 
 .margin(@top, @right, @bottom, @left) when not (@rtl) {

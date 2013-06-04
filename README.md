@@ -58,6 +58,8 @@ Less.js RTL/LTR mixins rules.
 * .direction()
 * .direction(@dir)
 * .left(@left)
+* .float()
+* .float(@float)
 * .margin(@top, @right, @bottom, @left)
 * .margin-left(@left)
 * .margin-right(@right)
