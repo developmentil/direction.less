@@ -1,7 +1,11 @@
-less-direction
+direction.less
 ==============
 
 Less.js RTL/LTR mixins rules.
+
+# Download
+
+[latest](https://raw.github.com/DevelopmentIL/direction.less/master/direction.less)
 
 # Example
 
@@ -67,9 +71,9 @@ Less.js RTL/LTR mixins rules.
 License
 =======
 
-further.js is freely distributable under the terms of the MIT license.
+direction.less is freely distributable under the terms of the MIT license.
 
-Copyright (c) 2012 Moshe Simantov
+Copyright (c) 2013 Moshe Simantov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use,
