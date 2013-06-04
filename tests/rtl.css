@@ -1,3 +1,11 @@
+/*!
+* direction.less v0.1.0
+*
+* Copyright 2013 Moshe Simantov
+* Licensed under the MIT license
+* 
+* Keep tracking: https://github.com/DevelopmentIL/direction.less
+*/
 div.border-color {
   border-color: #ffffff #0000ff #00ff00 #ff0000;
 }
@@ -50,6 +58,18 @@ div.border-bottom-right-radius {
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   border-bottom-left-radius: 4px;
+}
+div.clear {
+  clear: both;
+}
+div.clear-none {
+  clear: none;
+}
+div.clear-left {
+  clear: right;
+}
+div.clear-right {
+  clear: left;
 }
 div.direction {
   direction: rtl;

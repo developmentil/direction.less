@@ -1,3 +1,14 @@
+/*!
+* direction.less v0.1.0
+*
+* Copyright 2013 Moshe Simantov
+* Licensed under the MIT license
+* 
+* Keep tracking: https://github.com/DevelopmentIL/direction.less
+*/
+
+// Local vars
+
 @rtl: ~`"@{direction}" === 'rtl' ? 'true' : 'false'`;
 @left: ~`@{rtl} ? 'right' : 'left'`;
 @right: ~`@{rtl} ? 'left' : 'right'`;
@@ -154,6 +165,21 @@
 	-webkit-border-bottom-left-radius: @radius;
 	-moz-border-radius-bottomleft: @radius;
 	border-bottom-left-radius: @radius;
+}
+
+
+// "clear:" rule
+
+.clear(@side: both) when not (@rtl), not (@side = left) and not (@side = right) {
+	clear: @side;
+}
+
+.clear(left) when (@rtl) {
+	clear: right;
+}
+
+.clear(right) when (@rtl) {
+	clear: left;
 }
 
 
