@@ -242,6 +242,14 @@
 	margin: @top @left @bottom @right;
 }
 
+.ie7-margin(@top, @right, @bottom, @left) when not (@rtl) {
+	*margin: @top @right @bottom @left;
+}
+
+.ie7-margin(@top, @right, @bottom, @left) when (@rtl) {
+	*margin: @top @left @bottom @right;
+}
+
 
 // "margin-left:" rule
 
@@ -253,6 +261,14 @@
 	margin-right: @left;
 }
 
+.ie7-margin-left(@left) when not (@rtl) {
+	*margin-left: @left;
+}
+
+.ie7-margin-left(@left) when (@rtl) {
+	*margin-right: @left;
+}
+
 
 // "margin-right:" rule
 
@@ -262,6 +278,14 @@
 
 .margin-right(@right) when (@rtl) {
 	margin-left: @right;
+}
+
+.ie7-margin-right(@right) when not (@rtl) {
+	*margin-right: @right;
+}
+
+.ie7-margin-right(@right) when (@rtl) {
+	*margin-left: @right;
 }
 
 
