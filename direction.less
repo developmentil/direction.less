@@ -350,3 +350,30 @@
 .right(@right) when (@rtl) {
 	left: @right;
 }
+
+// "translateX":rule
+
+.translateX(@x) when not (@rtl) {
+  -webkit-transform: translateX(@x);
+      -ms-transform: translateX(@x); // IE9+
+          transform: translateX(@x);
+}
+.translateX(@x) when (@rtl) {
+  -webkit-transform: translateX(-1*(@x));
+      -ms-transform: translateX(-1*(@x)); // IE9+
+          transform: translateX(-1*(@x));
+}
+
+// "translate3d":rule
+
+.translate3d(@x; @y; @z) when not (@rtl) {
+  -webkit-transform: translate3d(@x, @y, @z);
+          transform: translate3d(@x, @y, @z);
+      -ms-transform:translate(@x, @y);
+}
+
+.translate3d(@x; @y; @z) when (@rtl) {
+  -webkit-transform: translate3d(-1*(@x), @y, @z);
+          transform: translate3d(-1*(@x), @y, @z);
+      -ms-transform:translate(-1*(@x), @y);
+}
